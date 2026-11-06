@@ -6,7 +6,7 @@
     <title>Tank Shooter 3D</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; }
+        body { font-family: Arial, sans-serif; cursor: crosshair; }
         #canvas { display: block; width: 100vw; height: 100vh; }
         #ui {
             position: absolute;
@@ -51,7 +51,8 @@
     <div id="ui">
         <div id="health">Health: <span id="healthVal">100</span></div>
         <div id="kills">Enemies: <span id="killsVal">0</span></div>
-        <div id="info">WASD move | ARROWS rotate/view 360° | MOUSE aim | SPACE shoot | ESC pause</div>
+        <div id="soundStatus">Audio: <span id="soundVal">🔊 ON</span> (Press M to toggle)</div>
+        <div id="info">WASD move | ARROWS rotate | MOUSE aim | LEFT CLICK shoot | RIGHT DRAG view | M mute | ESC pause</div>
     </div>
     <div id="pauseMenu" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.85); color: white; padding: 30px 50px; border-radius: 10px; text-align: center; display: none; z-index: 100; font-size: 28px;">
         <div>PAUSED</div>
